@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+}
+
+
+
+
+:root {
+
+    --purple: #1d2039;
+    --light-purple: #242947;
+    --lighter-purple: #797e9a;
+    --green: #66a663;
+    --white: #fff;
+    --orange: #dbac36;
+
+
+}
+
+body {
+    background-color: var(--purple);
+    margin: 20px;
+
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--light-purple);
+    margin-bottom: 20px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap-reverse;
+
+}
+
+.gameArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-purple);
+    padding: 20px;
+    border-radius: 20px;
+    flex-grow: 1000;
+}
+
+.gameField {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 6px;
+}
+
+.field {
+    background-color: var(--purple);
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.field.active {
+    background-color: var(--lighter-purple);
+}
+
+.field.flag {
+    background-image: url(./img/flag-in-hole.png);
+    background-position: center;
+    background-size: contain;
+    background-color: var(--green);
+
+}
+
+.gameSetting {
+    background-color: var(--light-purple);
+    padding: 40px 20px;
+    border-radius: 20px;
+    flex-grow: 1;
+    width: 500px;
+
+}
+
+.gameSetting h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.scoup {
+    display: flex;
+    gap: 10px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.point {
+    font-size: 21px;
+    padding: 8px 0;
+    background-color: var(--purple);
+    flex-basis: 150px;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.point.active{
+    background-color: var(--orange);
+}
+#gameBtn {
+background-color:var(--green);
+color:var(--white);
+padding: 12px;
+border-radius: 50px;
+font-size: 24px;
+text-align: center;
+cursor: pointer;
+}
+#loginWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(159,159,184,0.26934523809523814) 35%, rgba(0,212,255,1) 100%);
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#loginWrapper {
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+#loginWrapper h3{
+    font-size: 26px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+#loginWrapper input{
+    width: 100%;
+    padding: 10px;
+    border-radius:8px;
+    outline: none;
+    background-color: var(--purple);
+    font-size: 22px;
+}
