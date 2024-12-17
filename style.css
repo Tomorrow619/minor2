@@ -73,6 +73,10 @@ header {
     width: 30px;
     height: 30px;
     border-radius: 4px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
 }
 
 .field.active {
@@ -86,7 +90,12 @@ header {
     background-color: var(--green);
 
 }
-
+.field.bomb {
+    background-color: orange;
+    background-image: url(./img/bomb.png);
+    background-position: center;
+    background-size: contain;
+}
 .gameSetting {
     background-color: var(--light-purple);
     padding: 40px 20px;
